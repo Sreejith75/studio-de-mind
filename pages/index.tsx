@@ -5,6 +5,12 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SectionWrapper from '../components/SectionWrapper';
 
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
 export default function Home() {
   return (
     <>
@@ -53,7 +59,7 @@ export default function Home() {
               transition={{ delay: 2, duration: 0.5 }}
             >
               <Link href="/contact" className="inline-block bg-accent text-foreground px-8 py-3 rounded-full font-semibold hover:bg-opacity-80 transition-colors">
-                Book Your Session
+                View Contact Details
               </Link>
             </motion.div>
           </motion.div>

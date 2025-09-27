@@ -4,12 +4,18 @@ import Footer from '../components/Footer';
 import SectionWrapper from '../components/SectionWrapper';
 import Form from '../components/Form';
 
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
 export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact & Book Appointment - Studio De Mind</title>
-        <meta name="description" content="Get in touch with Studio De Mind to book your mindfulness session or counseling appointment. We're here to support your mental wellness journey." />
+        <title>Contact Details - Studio De Mind</title>
+        <meta name="description" content="Get in touch with Studio De Mind. Find our contact details, email, phone, location, and hours. We're here to support your mental wellness journey." />
       </Head>
       <Header />
       <main>
@@ -17,10 +23,10 @@ export default function Contact() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-8">
-                Book Your Appointment
+                Contact Details
               </h1>
               <p className="text-xl text-foreground text-center mb-12">
-                Take the first step towards better mental health. Contact us to schedule your personalized therapy session.
+                Get in touch with us. Find our contact information and reach out for support on your mental wellness journey.
               </p>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
