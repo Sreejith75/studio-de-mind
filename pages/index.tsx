@@ -12,7 +12,7 @@ export default function Home() {
         <title>Studio De Mind - Mental Health & Mindset Therapy</title>
         <meta name="description" content="Promoting mindfulness and mental wellness through personalized therapy sessions. Book your appointment today." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/studio-de-mind-logo.png" />
       </Head>
       <Header />
       <main>
@@ -24,7 +24,7 @@ export default function Home() {
             transition={{ duration: 1 }}
           >
             <motion.img
-              src="/logo.svg"
+              src="/studio-de-mind-logo.png"
               alt="Studio De Mind Logo - Brain Camera Icon"
               className="mx-auto mb-8 w-32 h-32"
               initial={{ scale: 0 }}

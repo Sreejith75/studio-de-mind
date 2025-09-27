@@ -11,7 +11,7 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-background shadow-md z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <img src="/logo.svg" alt="Studio De Mind Logo" className="h-10 w-auto" />
+          <img src="/studio-de-mind-logo.png" alt="Studio De Mind Logo" className="h-10 w-auto" />
         </Link>
         <nav className="hidden md:flex space-x-6">
           <Link href="/" className="text-foreground hover:text-accent transition-colors">Home</Link>
