@@ -30,7 +30,7 @@ export default function Home() {
             transition={{ duration: 1 }}
           >
             <motion.img
-              src="/logo.svg"
+              src="/studio-de-mind-logo.png"
               alt="Studio De Mind Logo - Brain Camera Icon"
               className="mx-auto mb-8 w-32 h-32"
               initial={{ scale: 0 }}

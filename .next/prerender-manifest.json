@@ -1,10 +1,10 @@
 {
   "version": 4,
   "routes": {
-    "/contact": {
+    "/": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/BDm0LOVXHg8sBQ7r_UCzk/contact.json",
+      "dataRoute": "/_next/data/spott-2d0fay-guxS5Y6R/index.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -14,10 +14,10 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
+    "/contact": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/BDm0LOVXHg8sBQ7r_UCzk/index.json",
+      "dataRoute": "/_next/data/spott-2d0fay-guxS5Y6R/contact.json",
       "allowHeader": [
         "host",
         "x-matched-path",

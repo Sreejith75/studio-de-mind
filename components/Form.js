@@ -10,8 +10,6 @@ const Form = () => {
     message: '',
     appointmentDate: null,
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,31 +20,13 @@ const Form = () => {
     setFormData({ ...formData, appointmentDate: date });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitMessage('');
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setSubmitMessage('Thank you! Your message has been sent.');
-        setFormData({ name: '', email: '', message: '', appointmentDate: null });
-      } else {
-        setSubmitMessage('Sorry, there was an error sending your message.');
-      }
-    } catch (error) {
-      setSubmitMessage('Sorry, there was an error sending your message.');
-    }
-
-    setIsSubmitting(false);
+    const { name, email, message, appointmentDate } = formData;
+    const subject = `Appointment Request from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\nAppointment Date: ${appointmentDate ? appointmentDate.toLocaleDateString() : 'Not specified'}\n\nMessage:\n${message}`;
+    const mailtoLink = `mailto:info@studiodemind.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -110,17 +90,13 @@ const Form = () => {
       </div>
       <motion.button
         type="submit"
-        disabled={isSubmitting}
-        className="w-full bg-accent text-foreground py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors disabled:opacity-50"
+        className="w-full bg-accent text-foreground py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         aria-label="Submit form"
       >
-        {isSubmitting ? 'Sending...' : 'Book Appointment'}
+        Book Appointment
       </motion.button>
-      {submitMessage && (
-        <p className="mt-4 text-center text-accent" role="alert">{submitMessage}</p>
-      )}
     </motion.form>
   );
 };

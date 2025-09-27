@@ -1,3 +1,0 @@
-module.exports=[70176,a=>a.a(async(b,c)=>{try{a.s(["default",()=>g]);var d=a.i(8171),e=a.i(34791),f=b([e]);[e]=f.then?(await f)():f;let g=({children:a,className:b="",id:c=""})=>(0,d.jsx)(e.motion.section,{id:c,className:`py-16 ${b}`,initial:{opacity:0,y:50},whileInView:{opacity:1,y:0},transition:{duration:.6},viewport:{once:!0},children:a});c()}catch(a){c(a)}},!1)];
-
-//# sourceMappingURL=components_SectionWrapper_720ea91f.js.map
