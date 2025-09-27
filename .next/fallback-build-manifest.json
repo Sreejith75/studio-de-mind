@@ -1,25 +1,25 @@
 {
   "pages": {
     "/_app": [
-      "static/chunks/a32da041b16560ea.js",
-      "static/chunks/bfd1182df7bdfb1e.js",
+      "static/chunks/b7ba1a644e4a2ab0.js",
+      "static/chunks/490e202eba3a7521.js",
       "static/chunks/779db8c04302b3cd.js",
-      "static/chunks/8e425e0c5c663131.css",
-      "static/chunks/turbopack-aaa5f16cf9e7480a.js"
+      "static/chunks/88fe492e5572c912.css",
+      "static/chunks/turbopack-93433ea0cc1b7d52.js"
     ],
     "/_error": [
-      "static/chunks/0804bf7a5de854d2.js",
-      "static/chunks/bfd1182df7bdfb1e.js",
+      "static/chunks/93b7ea393049570f.js",
+      "static/chunks/490e202eba3a7521.js",
       "static/chunks/779db8c04302b3cd.js",
-      "static/chunks/turbopack-e546a8c29af23ee4.js"
+      "static/chunks/turbopack-5c51fc2d6cc0edae.js"
     ]
   },
   "devFiles": [],
   "ampDevFiles": [],
   "polyfillFiles": [],
   "lowPriorityFiles": [
-    "static/BDm0LOVXHg8sBQ7r_UCzk/_ssgManifest.js",
-    "static/BDm0LOVXHg8sBQ7r_UCzk/_buildManifest.js"
+    "static/spott-2d0fay-guxS5Y6R/_ssgManifest.js",
+    "static/spott-2d0fay-guxS5Y6R/_buildManifest.js"
   ],
   "rootMainFiles": [],
   "ampFirstPages": []
