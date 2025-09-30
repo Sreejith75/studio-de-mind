@@ -19,7 +19,7 @@ export default function Contact() {
       <Header />
       <main>
         <SectionWrapper className="bg-background">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 mt-[2rem]">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-8">
                 Contact Details
@@ -29,31 +29,31 @@ export default function Contact() {
               </p>
               <div className="max-w-2xl mx-auto">
                 <h2 className="text-2xl font-semibold text-foreground mb-6 text-center">Get in Touch</h2>
-                <div className="space-y-6">
-                  <div className="flex items-center justify-center">
+                <div className="space-y-6 ">
+                  <div className="flex items-center">
                     <span className="text-accent mr-3">📧</span>
-                    <div className="text-center">
+                    <div>
                       <p className="font-medium text-foreground">Email</p>
                       <p className="text-foreground">info@studiodemind.com</p>
                     </div>
                   </div>
-                  <div className="flex items-center justify-center">
+                  <div className="flex items-center">
                     <span className="text-accent mr-3">📞</span>
-                    <div className="text-center">
+                    <div>
                       <p className="font-medium text-foreground">Phone</p>
                       <p className="text-foreground">(555) 123-MIND</p>
                     </div>
                   </div>
-                  <div className="flex items-center justify-center">
+                  <div className="flex items-center">
                     <span className="text-accent mr-3">📍</span>
-                    <div className="text-center">
+                    <div>
                       <p className="font-medium text-foreground">Location</p>
                       <p className="text-foreground">123 Serenity Lane<br />Mindful City, MC 12345</p>
                     </div>
                   </div>
-                  <div className="flex items-center justify-center">
+                  <div className="flex items-center">
                     <span className="text-accent mr-3">🕒</span>
-                    <div className="text-center">
+                    <div>
                       <p className="font-medium text-foreground">Hours</p>
                       <p className="text-foreground">Mon-Fri: 9AM-6PM<br />Sat: 10AM-4PM</p>
                     </div>

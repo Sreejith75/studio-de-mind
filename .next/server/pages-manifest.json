@@ -3,9 +3,8 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/about": "pages/about.html",
-  "/blog": "pages/blog.html",
+  "/about": "pages/about.js",
+  "/blog": "pages/blog.js",
   "/contact": "pages/contact.js",
-  "/services": "pages/services.html",
-  "/404": "pages/404.html"
+  "/services": "pages/services.js"
 }

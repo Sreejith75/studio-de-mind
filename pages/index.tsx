@@ -18,7 +18,7 @@ export default function Home() {
         <title>Studio De Mind - Mental Health & Mindset Therapy</title>
         <meta name="description" content="Promoting mindfulness and mental wellness through personalized therapy sessions. Book your appointment today." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/studio-de-mind.ico" />
       </Head>
       <Header />
       <main>
