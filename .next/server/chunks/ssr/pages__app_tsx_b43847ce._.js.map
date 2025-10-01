@@ -1,6 +1,1 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/sreejith.k/Desktop/Sreejith/Code/studio-de-mind/pages/_app.tsx"],"sourcesContent":["import \"@/styles/globals.css\";\nimport type { AppProps } from \"next/app\";\n\nexport default function App({ Component, pageProps }: AppProps) {\n  return <Component {...pageProps} />;\n}\n"],"names":[],"mappings":";;;;;;;AAGe,SAAS,IAAI,EAAE,SAAS,EAAE,SAAS,EAAY;IAC5D,qBAAO,qKAAC;QAAW,GAAG,SAAS;;;;;;AACjC","debugId":null}}]
-}
+{"version":3,"sources":["turbopack:///[project]/pages/_app.tsx"],"sourcesContent":["import \"@/styles/globals.css\";\nimport type { AppProps } from \"next/app\";\n\nexport default function App({ Component, pageProps }: AppProps) {\n  return <Component {...pageProps} />;\n}\n"],"names":[],"mappings":"8EAGe,SAAS,EAAI,WAAE,CAAS,WAAE,CAAS,CAAY,EAC5D,MAAO,CAAA,EAAA,EAAA,GAAA,EAAC,EAAA,CAAW,GAAG,CAAS,EACjC"}

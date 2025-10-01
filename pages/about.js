@@ -18,19 +18,19 @@ export default function About() {
       name: 'Farhana',
       title: 'Consultant Psychologist',
       quote: "Whether you're feeling lost, overwhelmed, or unsure - sharing is a step toward feeling lighter. I am here to listen-without judgement, without pressure. Your story matters... Let's talk. You don't have to carry it alone.",
-      photo: '/blank-user.png'
+      photo: '/Farhana.jpg'
     },
     {
       name: 'Minha Marjan',
       title: 'Consultant Psychologist',
       quote: "Welcome to your journey of self-discovery! Let's explore life's challenges together, with empathy, expertise, and compassion as our guide. In a safe and non-judgmental space, we'll uncover your strengths, build resilience, and reveal your inner wisdom. Ready to embark on this transformative adventure?",
-      photo: '/blank-user.png'
+      photo: '/Minha.jpg'
     },
     {
       name: 'Esther',
       title: 'Consultant Psychologist',
       quote: "Hello Esther here, your Consultant Psychologist. I'm excited to support you on your path to growth and self-awareness. Together, we'll explore your thoughts, feelings, and experiences in a safe and compassionate space. My goal is to empower you with the tools and insights you need to navigate life's challenges with confidence and clarity.",
-      photo: '/blank-user.png'
+      photo: '/Esther.jpg'
     }
   ];
 
@@ -92,8 +92,8 @@ export default function About() {
                     <Image
                       src={therapist.photo}
                       alt={therapist.name}
-                      width={128}
-                      height={128}
+                      width={160}
+                      height={160}
                       className="rounded-full mx-auto border-4 border-accent"
                     />
                   </div>
