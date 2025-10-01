@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SectionWrapper from '../components/SectionWrapper';
@@ -12,16 +13,37 @@ export default function About() {
     { title: 'Holistic Approach', description: 'Integrating mind, body, and spirit for comprehensive wellness.', icon: '🌿' },
   ];
 
+  const therapists = [
+    {
+      name: 'Farhana',
+      title: 'Consultant Psychologist',
+      quote: "Whether you're feeling lost, overwhelmed, or unsure - sharing is a step toward feeling lighter. I am here to listen-without judgement, without pressure. Your story matters... Let's talk. You don't have to carry it alone.",
+      photo: '/Farhana.jpg'
+    },
+    {
+      name: 'Minha Marjan',
+      title: 'Consultant Psychologist',
+      quote: "Welcome to your journey of self-discovery! Let's explore life's challenges together, with empathy, expertise, and compassion as our guide. In a safe and non-judgmental space, we'll uncover your strengths, build resilience, and reveal your inner wisdom. Ready to embark on this transformative adventure?",
+      photo: '/Minha.jpg'
+    },
+    {
+      name: 'Esther',
+      title: 'Consultant Psychologist',
+      quote: "Hello Esther here, your Consultant Psychologist. I'm excited to support you on your path to growth and self-awareness. Together, we'll explore your thoughts, feelings, and experiences in a safe and compassionate space. My goal is to empower you with the tools and insights you need to navigate life's challenges with confidence and clarity.",
+      photo: '/Esther.jpg'
+    }
+  ];
+
   return (
     <>
-      <Head>
-        <title>About Us - Studio De Mind</title>
+      <Head >
+        <title >About Us - Studio De Mind</title>
         <meta name="description" content="Learn about our mission to promote mindfulness and mental wellness through personalized therapy services." />
       </Head>
       <Header />
       <main>
         <SectionWrapper className="bg-background">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 mt-[2rem]">
             <motion.h1
               className="text-4xl md:text-5xl font-bold text-foreground text-center mb-8"
               initial={{ opacity: 0, y: 30 }}
@@ -49,36 +71,37 @@ export default function About() {
         <SectionWrapper className="bg-accent/10">
           <div className="container mx-auto px-4">
             <motion.h2
-              className="text-3xl md:text-4xl font-bold text-foreground text-center mb-8"
+              className="text-3xl md:text-4xl font-bold text-foreground text-center mb-12"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              Meet Our Therapist
+              Meet Our Therapists
             </motion.h2>
-            <div className="max-w-4xl mx-auto">
-              <motion.div
-                className="bg-white p-8 rounded-lg shadow-md"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.3, duration: 0.6 }}
-              >
-                <div className="flex flex-col md:flex-row items-center mb-6">
-                  <div className="w-32 h-32 bg-accent rounded-full flex items-center justify-center text-6xl mb-4 md:mb-0 md:mr-6">
-                    👩‍⚕️
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {therapists.map((therapist, index) => (
+                <motion.div
+                  key={therapist.name}
+                  className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.2, duration: 0.6 }}
+                  whileHover={{ y: -5 }}
+                >
+                  <div className="mb-4">
+                    <Image
+                      src={therapist.photo}
+                      alt={therapist.name}
+                      width={160}
+                      height={160}
+                      className="rounded-full mx-auto border-4 border-accent"
+                    />
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-foreground mb-2">Dr. Sarah Mindfulness</h3>
-                    <p className="text-accent font-medium mb-4">Licensed Clinical Psychologist & Mindfulness Practitioner</p>
-                  </div>
-                </div>
-                <p className="text-foreground mb-4">
-                  With over 15 years of experience in mental health therapy, Dr. Sarah Mindfulness specializes in mindfulness-based cognitive therapy, trauma-informed care, and holistic wellness approaches. She holds a Ph.D. in Clinical Psychology from the University of Mindfulness and is certified in various mindfulness meditation techniques.
-                </p>
-                <p className="text-foreground">
-                  Dr. Mindfulness is passionate about helping individuals reconnect with their inner wisdom and find peace amidst life's challenges. Her approach integrates traditional therapeutic methods with contemporary mindfulness practices to provide comprehensive, client-centered care.
-                </p>
-              </motion.div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{therapist.name}</h3>
+                  <p className="text-accent font-medium mb-4">{therapist.title}</p>
+                  <p className="text-foreground italic">"{therapist.quote}"</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </SectionWrapper>

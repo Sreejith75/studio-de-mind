@@ -54,11 +54,11 @@
   "dataRoutes": [
     {
       "page": "/",
-      "dataRouteRegex": "^/_next/data/spott\\-2d0fay\\-guxS5Y6R/index\\.json$"
+      "dataRouteRegex": "^/_next/data/vK0BMFaxegvSrPXnk1v51/index\\.json$"
     },
     {
       "page": "/contact",
-      "dataRouteRegex": "^/_next/data/spott\\-2d0fay\\-guxS5Y6R/contact\\.json$"
+      "dataRouteRegex": "^/_next/data/vK0BMFaxegvSrPXnk1v51/contact\\.json$"
     }
   ],
   "rsc": {

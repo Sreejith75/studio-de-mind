@@ -53,7 +53,7 @@ export default function Services() {
       <Header />
       <main>
         <SectionWrapper className="bg-background">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 mt-[2rem]">
             <motion.h1
               className="text-4xl md:text-5xl font-bold text-foreground text-center mb-8"
               initial={{ opacity: 0, y: 30 }}
